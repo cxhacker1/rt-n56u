@@ -30,11 +30,11 @@ jobs:
         env:
           Model: ${{ github.event.inputs.version }}
         run: |
-              git clone https://github.com/cxhacker1/padavan-4.4.git /opt/padavan-4.4
-              cd /opt/padavan-4.4/toolchain-mipsel
+              git clone https://github.com/cxhacker1/rt-n56u.git /opt/rt-n56u
+              cd /opt/rt-n56u/toolchain-mipsel
               sh dl_toolchain.sh
               mkdir -p /opt/images/
-              cd /opt/padavan-4.4/trunk
+              cd /opt/rt-n56u/trunk
               sudo ./build_firmware_modify $Model
               sudo mv -f images/*.trx /opt/images/
       
