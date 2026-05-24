@@ -65,8 +65,9 @@ if [ -f /etc_ro/openssl.cnf ]; then
 fi
 
 if [ -f /etc_ro/ca-certificates.crt ]; then
-	cp -f /etc_ro/ca-certificates.crt /etc/ssl/cert.pem
+	cp -f /etc_ro/ca-certificates.crt /etc/ssl/certs
 fi
+
 # create symlinks
 ln -sf /home/root /home/admin
 ln -sf /proc/mounts /etc/mtab
@@ -81,6 +82,9 @@ ln -sf /etc_ro/ipkg.conf /etc/ipkg.conf
 # tune linux kernel
 echo 65536        > /proc/sys/fs/file-max
 echo "1024 65535" > /proc/sys/net/ipv4/ip_local_port_range
+
+#fix web ui slow issue
+echo 0 > /proc/sys/net/ipv4/tcp_tw_recycle
 
 # fill storage
 mtd_storage.sh fill
