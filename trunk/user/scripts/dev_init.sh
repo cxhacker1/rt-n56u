@@ -50,6 +50,7 @@ mkdir -p -m 700 /home/root
 mkdir -p -m 700 /home/root/.ssh
 mkdir -p -m 755 /etc/storage
 mkdir -p -m 755 /etc/ssl
+mkdir -p -m 755 /etc/ssl/certs
 mkdir -p -m 755 /etc/Wireless
 mkdir -p -m 750 /etc/Wireless/RT2860
 mkdir -p -m 750 /etc/Wireless/iNIC
@@ -63,6 +64,9 @@ if [ -f /etc_ro/openssl.cnf ]; then
 	cp -f /etc_ro/openssl.cnf /etc/ssl
 fi
 
+if [ -f /etc_ro/ca-certificates.crt ]; then
+ cp -f /etc_ro/ca-certificates.crt /etc/ssl/cert.pem
+fi
 # create symlinks
 ln -sf /home/root /home/admin
 ln -sf /proc/mounts /etc/mtab
