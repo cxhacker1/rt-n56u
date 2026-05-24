@@ -1,0 +1,45 @@
+
+#输入的机型名称要注意与configs/templates/目录下的名字相同
+
+name: Build Padavan
+
+on: 
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '请输入编译机型，例如K2P'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+      - name: Initialization environment
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+              sudo apt-get update
+              sudo apt-get -y install unzip libtool-bin cmake gperf gawk flex bison \
+              xxd fakeroot cpio python3-docutils gettext automake autopoint texinfo \
+              build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpc-dev \
+              libmpfr-dev libncurses5-dev libltdl-dev
+    
+      - name: Build Firmware
+        env:
+          Model: ${{ github.event.inputs.version }}
+        run: |
+              git clone https://github.com/cxhacker1/padavan-4.4.git /opt/padavan-4.4
+              cd /opt/padavan-4.4/toolchain-mipsel
+              sh dl_toolchain.sh
+              mkdir -p /opt/images/
+              cd /opt/padavan-4.4/trunk
+              sudo ./build_firmware_modify $Model
+              sudo mv -f images/*.trx /opt/images/
+      
+      - name: Upload packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: Padavan-packages
+          path: /opt/images
