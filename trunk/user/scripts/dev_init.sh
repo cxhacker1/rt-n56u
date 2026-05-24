@@ -83,9 +83,6 @@ ln -sf /etc_ro/ipkg.conf /etc/ipkg.conf
 echo 65536        > /proc/sys/fs/file-max
 echo "1024 65535" > /proc/sys/net/ipv4/ip_local_port_range
 
-# fix web ui slow issue
-echo 0 > /proc/sys/net/ipv4/tcp_tw_recycle
-
 # fill storage
 mtd_storage.sh fill
 
