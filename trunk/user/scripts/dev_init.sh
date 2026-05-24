@@ -61,11 +61,11 @@ mtd_storage.sh load
 touch /etc/resolv.conf
 
 if [ -f /etc_ro/openssl.cnf ]; then
-	cp -f /etc_ro/openssl.cnf /etc/ssl
+	cp -f /etc_ro/openssl.cnf /etc/ssl/openssl.cnf
 fi
 
 if [ -f /etc_ro/ca-certificates.crt ]; then
-	cp -f /etc_ro/ca-certificates.crt /etc/ssl/certs
+	cp -f /etc_ro/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 fi
 
 # create symlinks
