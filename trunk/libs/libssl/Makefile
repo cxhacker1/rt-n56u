@@ -77,8 +77,8 @@ romfs:
 	cp -fP $(DESTDIR)/lib/libssl.so* $(ROMFSDIR)/lib
 	cp -fP $(DESTDIR)/lib/libcrypto.so* $(ROMFSDIR)/lib
 	mkdir -p $(ROMFSDIR)/etc/ssl/certs
-	$(ROMFSINST) /etc_ro/openssl.cnf
-	$(ROMFSINST) /etc/ssl/certs/ca-certificates.crt
+	$(ROMFSINST) openssl.cnf /etc_ro/openssl.cnf
+	$(ROMFSINST) ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 ifeq ($(CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE),y)
 	$(ROMFSINST) $(SRC_NAME)/apps/openssl /usr/bin/openssl
 endif
