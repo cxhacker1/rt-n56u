@@ -305,7 +305,6 @@ EOF
 ### Custom user script
 ### Called after internal iptables reconfig (firewall update)
 
-# wing resume
 # fix web ui slow issue
 echo 0 > /proc/sys/net/ipv4/tcp_tw_recycle
 
