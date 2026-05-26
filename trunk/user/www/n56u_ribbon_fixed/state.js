@@ -473,7 +473,7 @@ menuL1_title = new Array("", "<#menu1#>", "", "<#menu2#>", "<#menu6#>", "<#menu4
 menuL1_link = new Array("", "index.asp", "", "vpnsrv.asp", "vpncli.asp", "Main_TrafficMonitor_realtime.asp", "Advanced_System_Info.asp", "as.asp");
 menuL1_icon = new Array("", "icon-home", "icon-hdd", "icon-retweet", "icon-globe", "icon-tasks", "icon-random", "icon-wrench");
 
-if (!found_app_vpnsvr()) {
+if (!found_app_vpnsrv()) {
 	menuL1_title[3] = '';
 	menuL1_link[3] = '';
 	menuL1_icon[3] = '';
