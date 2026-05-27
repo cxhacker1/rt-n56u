@@ -469,21 +469,9 @@ if (found_app_mentohust()){
 } else menuL2_link.push("");
 
 //Level 1 Menu in Gateway, Router mode
-menuL1_title = new Array("", "<#menu1#>", "", "", "", "<#menu4#>", "<#menu5_8#>", "<#menu5#>");
-menuL1_link = new Array("", "index.asp", "", "", "", "Main_TrafficMonitor_realtime.asp", "Advanced_System_Info.asp", "as.asp");
-menuL1_icon = new Array("", "icon-home", "", "", "", "icon-tasks", "icon-random", "icon-wrench");
-
-if ('<% nvram_get_x("", "vpns_enable"); %>' == "1"){
-    menuL1_title[3] = "<#menu2#>";
-    menuL1_link[3]  = "vpnsrv.asp";
-    menuL1_icon[3]  = "icon-retweet";
-}
-
-if ('<% nvram_get_x("", "vpnc_enable"); %>' == "1"){
-    menuL1_title[4] = "<#menu6#>";
-    menuL1_link[4]  = "vpncli.asp";
-    menuL1_icon[4]  = "icon-globe";
-}
+menuL1_title = new Array("", "<#menu1#>", "", "<#menu2#>", "<#menu6#>", "<#menu4#>", "<#menu5_8#>", "<#menu5#>");
+menuL1_link = new Array("", "index.asp", "", "vpnsrv.asp", "vpncli.asp", "Main_TrafficMonitor_realtime.asp", "Advanced_System_Info.asp", "as.asp");
+menuL1_icon = new Array("", "icon-home", "icon-hdd", "icon-retweet", "icon-globe", "icon-tasks", "icon-random", "icon-wrench");
 
 function show_menu(L1, L2, L3){
 	var i;
