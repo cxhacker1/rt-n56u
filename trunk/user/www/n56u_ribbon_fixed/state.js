@@ -475,12 +475,12 @@ menuL1_icon = new Array("", "icon-home", "icon-hdd", "icon-retweet", "icon-globe
 
 if (found_app_vpns()){
 	menuL1_title[3] = "<#menu2#>";
- menuL1_link[3] = "vpnsrv.asp";
+	menuL1_link[3] = "vpnsrv.asp";
 }
 
 if (found_app_vpnc()){
 	menuL1_title[4] = "<#menu6#>";
- menuL1_link[4] = "vpncli.asp";
+	menuL1_link[4] = "vpncli.asp";
 }
 
 function show_menu(L1, L2, L3){
