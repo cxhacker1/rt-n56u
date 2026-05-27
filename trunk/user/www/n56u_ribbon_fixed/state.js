@@ -476,7 +476,7 @@ menuL1_icon = new Array("", "icon-home", "", "", "", "icon-tasks", "icon-random"
 if ('<% nvram_get_x("", "vpns_enable"); %>' == "1"){
     menuL1_title[3] = "<#menu2#>";
     menuL1_link[3]  = "vpnsrv.asp";
-    menuL1_icon[3]  = "icon-globe";
+    menuL1_icon[3]  = "icon-retweet";
 }
 
 if ('<% nvram_get_x("", "vpnc_enable"); %>' == "1"){
