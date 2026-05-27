@@ -173,7 +173,6 @@ ifneq ($(STORAGE_ENABLED),y)
 	rm -f $(INSTALLDIR)/www/Advanced_AiDisk_ftp.asp
 	rm -f $(INSTALLDIR)/www/Advanced_AiDisk_others.asp
 	rm -f $(INSTALLDIR)/www/Advanced_AiDisk_samba.asp
-	rm -f $(INSTALLDIR)/www/aidisk.asp
 	rm -f $(INSTALLDIR)/www/disk_folder_tree.js
 	rm -f $(INSTALLDIR)/www/device-map/disk.asp
 	rm -f $(INSTALLDIR)/www/device-map/safely_remove_disk.asp
@@ -181,6 +180,7 @@ ifneq ($(STORAGE_ENABLED),y)
 	rm -rf $(INSTALLDIR)/www/images/AiDisk
 	rm -rf $(INSTALLDIR)/www/images/Tree
 endif
+	rm -f $(INSTALLDIR)/www/aidisk.asp
 ifneq ($(CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT),y)
 	rm -f $(INSTALLDIR)/www/scutclient.asp
 	rm -f $(INSTALLDIR)/www/scutclient_log.asp
