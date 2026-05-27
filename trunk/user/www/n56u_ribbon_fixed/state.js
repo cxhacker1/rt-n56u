@@ -473,7 +473,7 @@ menuL1_title = new Array("", "<#menu1#>", "", "", "", "<#menu4#>", "<#menu5_8#>"
 menuL1_link = new Array("", "index.asp", "", "", "", "Main_TrafficMonitor_realtime.asp", "Advanced_System_Info.asp", "as.asp");
 menuL1_icon = new Array("", "icon-home", "", "", "", "icon-tasks", "icon-random", "icon-wrench");
 
-if (found_app_vpnwebui()){
+if (found_app_openvpn()){
 	menuL1_title[3] = "<#menu2#>";
 	menuL1_link[3] = "vpnsrv.asp";
 	menuL1_icon[3] = "icon-retweet";
