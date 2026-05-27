@@ -121,12 +121,12 @@ function show_disk_link(){
 	if (!labels_show)
 		$("mounted_item2").style.display = "none";
 }
-
-//function goAiDiskWizard(){
-//parent.showLoading();
-//parent.location.href = "/aidisk.asp";
-//}
-
+/*
+function goAiDiskWizard(){
+  parent.showLoading();
+  parent.location.href = "/aidisk.asp";
+}
+*/
 function remove_disk(){
 	var str = "<#Safelyremovedisk_confirm#>";
 	
