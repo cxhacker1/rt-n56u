@@ -587,7 +587,7 @@ function on_ttyd_link(){
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
+                                    <!--<tr>
                                             <th><#Adm_Svc_adsc#></th>
                                             <td>
                                                 <div class="main_itoggle">
@@ -600,7 +600,7 @@ function on_ttyd_link(){
                                                     <input type="radio" name="adsc_enable" id="adsc_enable_0" class="input" value="0" <% nvram_match_x("", "adsc_enable", "0", "checked"); %>/><#checkbox_No#>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr>-->
                                         <tr>
                                             <th><#Adm_Svc_crond#></th>
                                             <td>
