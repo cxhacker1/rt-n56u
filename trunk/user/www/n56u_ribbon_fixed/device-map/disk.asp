@@ -184,14 +184,14 @@ function remove_disk(){
             <span id="usb_availablespace"></span>
         </td>
     </tr>
-<!--
+    <!--
     <tr id="aidisk_hyperlink">
         <th><#AiDiskWizard#>:</th>
         <td>
             <input type="button" class="btn span2" onclick="goAiDiskWizard();" value="<#btn_go#>" >
         </td>
     </tr>
--->
+    -->
 </table>
 
 <table width="98%" cellpadding="4" cellspacing="0" class="table">
