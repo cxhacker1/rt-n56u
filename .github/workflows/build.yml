@@ -24,7 +24,7 @@ jobs:
               sudo apt-get -y install unzip libtool-bin cmake gperf gawk flex bison \
               xxd fakeroot cpio python3-docutils gettext automake autopoint texinfo \
               build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpc-dev \
-              libmpfr-dev libncurses5-dev libltdl-dev
+              libmpfr-dev libncurses5-dev libltdl-dev gcc g++ make autoconf
     
       - name: Build Firmware
         env:
