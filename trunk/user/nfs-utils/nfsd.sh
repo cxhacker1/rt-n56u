@@ -2,9 +2,9 @@
 
 func_start()
 {
- # Fix netconfig
+  # Fix netconfig
 	if [ ! -f /etc/netconfig ]; then
-			cp /etc_ro/netconfig /etc/netconfig
+		 cp /etc_ro/netconfig /etc/netconfig
 	fi
 	
 	# check rpcbind (needed for NFS)
