@@ -262,6 +262,9 @@ func_fill()
 #modprobe ip_set_list_set
 #modprobe xt_set
 
+# fix web ui slow issue
+echo 0 > /proc/sys/net/ipv4/tcp_tw_recycle
+
 #drop caches
 sync && echo 3 > /proc/sys/vm/drop_caches
 
@@ -304,9 +307,6 @@ EOF
 
 ### Custom user script
 ### Called after internal iptables reconfig (firewall update)
-
-# fix web ui slow issue
-echo 0 > /proc/sys/net/ipv4/tcp_tw_recycle
 
 EOF
 		chmod 755 "$script_postf"
