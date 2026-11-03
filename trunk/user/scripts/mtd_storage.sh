@@ -265,7 +265,7 @@ func_fill()
 # fix web ui slow issue
 echo 0 > /proc/sys/net/ipv4/tcp_tw_recycle
 
-#drop caches
+# drop caches
 sync && echo 3 > /proc/sys/vm/drop_caches
 
 # Roaming assistant for mt76xx WiFi
