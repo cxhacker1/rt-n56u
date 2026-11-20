@@ -10,6 +10,9 @@ on:
         description: '请输入编译机型，例如K2P'
         required: true
 
+env:                      # 环境变量
+  MHZ: 1100               # CPU超频频率 必须为20的倍数。开启超频请打开对应选项开关
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -36,6 +39,14 @@ jobs:
               ./build_toolchain
               mkdir -p /opt/images/
               cd /opt/rt-n56u/trunk
+
+              echo "CPU超频到$MHZ"mhz
+              echo "修改CPU频率"
+              clock=`echo "obase=16 ; ibase=10 ; (((($MHZ/20)-1)*16+2))" | bc`
+              echo "16进制$clock"
+              sed -i "554,555s:0xff:0x7ff:g" /opt/rt-n56u/trunk/linux-3.4.x/arch/mips/rt2880/init.c
+              sed -i "554,556s:0xc2:0x$clock:g" /opt/rt-n56u/trunk/linux-3.4.x/arch/mips/rt2880/init.c
+
               sudo ./build_firmware_modify $Model
               sudo mv -f images/*.trx /opt/images/
       
