@@ -1139,9 +1139,6 @@ ipt_filter_rules(char *man_if, char *wan_if, char *lan_if, char *lan_ip,
 		if (is_nat_enabled) {
 			char *dmz_ip;
 			
-			/* Accept to BattleNET */
-			if (nvram_match("sp_battle_ips", "1"))
-				fprintf(fp, "-A %s -p udp --dport %d -j %s\n", dtype, BATTLENET_PORT, logaccept);
 			
 #if defined (USE_MATCH_CONNTRACK)
 			/* Accept to Virtual Servers, UPnP, DMZ */
