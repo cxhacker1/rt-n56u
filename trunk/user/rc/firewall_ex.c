@@ -29,7 +29,6 @@
 
 #define foreach_x(x)		for (i=0; i<nvram_get_int(x); i++)
 
-#define BATTLENET_PORT		6112
 #define TRANSMISSION_PPORT	51413
 #define TRANSMISSION_RPORT	9091
 #define ARIA_PPORT		16888
