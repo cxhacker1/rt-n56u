@@ -21,13 +21,6 @@
 <script type="text/javascript" src="/popup.js"></script>
 <script type="text/javascript" src="/help.js"></script>
 <script type="text/javascript" src="/client_function.js"></script>
-<script>
-var $j = jQuery.noConflict();
-
-$j(document).ready(function() {
-	init_itoggle('sp_battle_ips');
-});
-</script>
 
 <script>
 
@@ -185,29 +178,6 @@ function done_validating(action){
                                         </tr>
                                     </table>
 
-                                    <table width="100%" cellpadding="4" cellspacing="0" class="table">
-                                        <tr>
-                                            <th colspan="2" style="background-color: #E3E3E3;"><#IPConnection_BattleNet_sectionname#></th>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2"><div class="alert alert-info" style="margin: 2px;"><#IPConnection_BattleNet_sectiondesc#></div></td>
-                                        </tr>
-                                        <tr>
-                                            <th width="50%"><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,7,21);"><#IPConnection_BattleNet_itemname#></a></th>
-                                            <td>
-                                                <div class="main_itoggle">
-                                                    <div id="sp_battle_ips_on_of">
-                                                        <input type="checkbox" id="sp_battle_ips_fake" <% nvram_match_x("", "sp_battle_ips", "1", "value=1 checked"); %><% nvram_match_x("", "sp_battle_ips", "0", "value=0"); %> />
-                                                    </div>
-                                                </div>
-
-                                                <div style="position: absolute; margin-left: -10000px;">
-                                                    <input type="radio" value="1" name="sp_battle_ips" id="sp_battle_ips_1" <% nvram_match_x("", "sp_battle_ips", "1", "checked"); %>/><#checkbox_Yes#>
-                                                    <input type="radio" value="0" name="sp_battle_ips" id="sp_battle_ips_0" <% nvram_match_x("", "sp_battle_ips", "0", "checked"); %>/><#checkbox_No#>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
 
                                     <table class="table">
                                         <tr>
