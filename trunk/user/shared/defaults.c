@@ -453,7 +453,6 @@ struct nvram_pair router_defaults[] = {
 	{ "upnp_eport_max", "65535" },
 	{ "vts_enable_x", "0" },
 	{ "vts_num_x", "0" },
-	{ "sp_battle_ips", "0" },
 	{ "fw_log_x", "none" },
 	{ "misc_http_x", "0" },
 	{ "misc_httpport_x", "8080" },
