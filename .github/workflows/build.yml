@@ -40,8 +40,7 @@ jobs:
               mkdir -p /opt/images/
               cd /opt/rt-n56u/trunk
 
-              echo "CPU超频到$MHZ"mhz
-              echo "修改CPU频率"
+              echo "修改 MT7621 CPU OC 频率"
               clock=`echo "obase=16 ; ibase=10 ; (((($MHZ/20)-1)*16+2))" | bc`
               echo "16进制$clock"
               sed -i "554,555s:0xff:0x7ff:g" /opt/rt-n56u/trunk/linux-3.4.x/arch/mips/rt2880/init.c
