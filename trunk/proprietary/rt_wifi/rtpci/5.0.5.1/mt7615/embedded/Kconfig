@@ -103,7 +103,7 @@ config DBDC_MODE
 config MULTI_PROFILE_SUPPORT
     bool "Multi Profile Support"
     depends on DBDC_MODE
-	default n
+	  default n
 
 config DEFAULT_5G_PROFILE
 	bool "5G default profile for DBDC"
