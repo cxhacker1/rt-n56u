@@ -331,7 +331,6 @@
 			{"upnp_eport_min", "", NULL, EVM_RESTART_UPNP},
 			{"upnp_eport_max", "", NULL, EVM_RESTART_UPNP},
 			{"dmz_ip", "", NULL, EVM_RESTART_FIREWALL},
-			{"sp_battle_ips", "", NULL, EVM_RESTART_FIREWALL},
 			{"vts_enable_x", "", NULL, EVM_RESTART_FIREWALL},
 			{"vts_num_x", "", NULL, EVM_RESTART_FIREWALL},
 			{"VSList", "Group", ARGV((char*)variables_IPConnection_VSList, "24", "75", "vts_num_x"), EVM_RESTART_FIREWALL},
