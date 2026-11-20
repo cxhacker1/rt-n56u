@@ -95,8 +95,8 @@ config HDR_TRANS_RX_SUPPORT
 
 config DBDC_MODE
 	bool "dbdc mode support"
-	depends on CHIP_MT7615E
-   select MULTI_PROFILE_SUPPORT
+	depends on CHIP_MT7615Eselect
+	MULTI_PROFILE_SUPPORT
 #	select DEFAULT_5G_PROFILE
 	default y
 
