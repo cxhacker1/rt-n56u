@@ -495,7 +495,7 @@ function checkDDNSReturnCode(){
                                             </td>
                                         </tr>
                                         <tr id="row_ddns_hname1">
-                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,24,3);"><#LANHostConfig_x_DDNSHostNames_itemname#></a></th>
+                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,24,3);"><#LANHostConfig_x_DDNSHostNames_itemname#> 1</a></th>
                                             <td>
                                                 <div id="ddnsname_input" style="display:none;">
                                                     <input type="text" class="input" maxlength="64" size="48" style="width: 286px;" id="ddns_hostname_x" name="ddns_hostname_x" value="<% nvram_get_x("","ddns_hostname_x"); %>" onKeyPress="return is_string(this,event);" />
@@ -507,13 +507,13 @@ function checkDDNSReturnCode(){
                                             </td>
                                         </tr>
                                         <tr id="row_ddns_hname2">
-                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,24,3);"><#LANHostConfig_x_DDNSHostNames_itemname#></a></th>
+                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,24,3);"><#LANHostConfig_x_DDNSHostNames_itemname#> 2</a></th>
                                             <td>
                                                 <input type="text" class="input" maxlength="64" size="48" style="width: 286px;" name="ddns_hostname2_x" value="<% nvram_get_x("","ddns_hostname2_x"); %>" onKeyPress="return is_string(this,event);" />
                                             </td>
                                         </tr>
                                         <tr id="row_ddns_hname3">
-                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,24,3);"><#LANHostConfig_x_DDNSHostNames_itemname#></a></th>
+                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,24,3);"><#LANHostConfig_x_DDNSHostNames_itemname#> 3</a></th>
                                             <td>
                                                 <input type="text" class="input" maxlength="64" size="48" style="width: 286px;" name="ddns_hostname3_x" value="<% nvram_get_x("","ddns_hostname3_x"); %>" onKeyPress="return is_string(this,event);" />
                                             </td>
