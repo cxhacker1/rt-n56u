@@ -340,7 +340,7 @@ function submitInternet(v){
     <td colspan="3"><span id="WANIP6"></span></td>
   </tr>
   <tr id="row_lan_ip6" style="display:none">
-    <th><#IP6_Addr#> LAN:</th>
+    <th><#IP6_Addr#> LAN</th>
     <td colspan="3"><span id="LANIP6"></span></td>
   </tr>
   <tr>
