@@ -342,7 +342,7 @@ function on_xupnpd_link(){
                                             </td>
                                         </tr>
                                         <tr id="row_m2u_wire">
-                                            <th>M2U - <#menu5_2_5#>:</th>
+                                            <th>M2U - <#menu5_2_5#></th>
                                             <td>
                                                 <select name="ether_m2u" class="input" onchange="on_change_m2u_wire();">
                                                     <option value="0" <% nvram_match_x("", "ether_m2u", "0", "selected"); %>><#btn_Disable#></option>
@@ -369,7 +369,7 @@ function on_xupnpd_link(){
                                             </td>
                                         </tr>
                                         <tr id="row_m2u_2ghz">
-                                            <th>M2U - <#menu5_11#>:</th>
+                                            <th>M2U - <#menu5_11#></th>
                                             <td>
                                                 <select name="rt_IgmpSnEnable" class="input">
                                                     <option value="0" <% nvram_match_x("", "rt_IgmpSnEnable", "0", "selected"); %>><#btn_Disable#></option>
@@ -378,7 +378,7 @@ function on_xupnpd_link(){
                                             </td>
                                         </tr>
                                         <tr id="row_m2u_5ghz">
-                                            <th>M2U - <#menu5_12#>:</th>
+                                            <th>M2U - <#menu5_12#></th>
                                             <td>
                                                 <select name="wl_IgmpSnEnable" class="input">
                                                     <option value="0" <% nvram_match_x("", "wl_IgmpSnEnable", "0", "selected"); %>><#btn_Disable#></option>
