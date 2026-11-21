@@ -256,7 +256,7 @@ function done_validating(action){
 
                                     <table width="100%" cellpadding="4" cellspacing="0" class="table">
                                         <tr>
-                                            <th width="50%" style="padding-bottom: 0px; border-top: 0 none;"><#FirewallConfig_UrlFilterEnable_itemname#>?</th>
+                                            <th width="50%" style="padding-bottom: 0px; border-top: 0 none;"><#FirewallConfig_UrlFilterEnable_itemname#></th>
                                             <td style="padding-bottom: 0px; border-top: 0 none;">
                                                 <div class="main_itoggle">
                                                     <div id="url_enable_on_of">
