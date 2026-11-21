@@ -1138,7 +1138,7 @@ function simplyMAC(fullMAC){
                                             </td>
                                         </tr>
                                         <tr id="vlan_lan1">
-                                            <th>VLAN LAN1:</th>
+                                            <th>VLAN LAN1</th>
                                             <td>
                                                 <span class="input-prepend"><span class="add-on">VID</span><input type="text" name="vlan_vid_lan1" class="wlan_filter" size="4" maxlength="4" value="<% nvram_get_x("", "vlan_vid_lan1"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
                                                 <span class="input-prepend"><span class="add-on">PRIO</span><input type="text" name="vlan_pri_lan1" class="wlan_filter" size="2" maxlength="1" value="<% nvram_get_x("", "vlan_pri_lan1"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
@@ -1146,7 +1146,7 @@ function simplyMAC(fullMAC){
                                             </td>
                                         </tr>
                                         <tr id="vlan_lan2">
-                                            <th>VLAN LAN2:</th>
+                                            <th>VLAN LAN2</th>
                                             <td>
                                                 <span class="input-prepend"><span class="add-on">VID</span><input type="text" name="vlan_vid_lan2" class="wlan_filter" size="4" maxlength="4" value="<% nvram_get_x("", "vlan_vid_lan2"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
                                                 <span class="input-prepend"><span class="add-on">PRIO</span><input type="text" name="vlan_pri_lan2" class="wlan_filter" size="2" maxlength="1" value="<% nvram_get_x("", "vlan_pri_lan2"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
@@ -1154,7 +1154,7 @@ function simplyMAC(fullMAC){
                                             </td>
                                         </tr>
                                         <tr id="vlan_lan3">
-                                            <th>VLAN LAN3:</th>
+                                            <th>VLAN LAN3</th>
                                             <td>
                                                 <span class="input-prepend"><span class="add-on">VID</span><input type="text" name="vlan_vid_lan3" class="wlan_filter" size="4" maxlength="4" value="<% nvram_get_x("", "vlan_vid_lan3"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
                                                 <span class="input-prepend"><span class="add-on">PRIO</span><input type="text" name="vlan_pri_lan3" class="wlan_filter" size="2" maxlength="1" value="<% nvram_get_x("", "vlan_pri_lan3"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
@@ -1162,7 +1162,7 @@ function simplyMAC(fullMAC){
                                             </td>
                                         </tr>
                                         <tr id="vlan_lan4">
-                                            <th>VLAN LAN4:</th>
+                                            <th>VLAN LAN4</th>
                                             <td>
                                                 <span class="input-prepend"><span class="add-on">VID</span><input type="text" name="vlan_vid_lan4" class="wlan_filter" size="4" maxlength="4" value="<% nvram_get_x("", "vlan_vid_lan4"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
                                                 <span class="input-prepend"><span class="add-on">PRIO</span><input type="text" name="vlan_pri_lan4" class="wlan_filter" size="2" maxlength="1" value="<% nvram_get_x("", "vlan_pri_lan4"); %>" onkeypress="return is_number(this,event);"/>&nbsp;&nbsp;</span>
