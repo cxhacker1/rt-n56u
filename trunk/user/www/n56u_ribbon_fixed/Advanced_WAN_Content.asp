@@ -1117,14 +1117,14 @@ function simplyMAC(fullMAC){
                                             </td>
                                         </tr>
                                         <tr id="vlan_inet">
-                                            <th>VLAN CPU (Internet):</th>
+                                            <th>VLAN CPU Internet</th>
                                             <td>
                                                 <span class="input-prepend"><span class="add-on">VID</span><input type="text" name="vlan_vid_cpu" class="wlan_filter" size="4" maxlength="4" value="<% nvram_get_x("", "vlan_vid_cpu"); %>" onkeypress="return is_number(this,event);" onblur="change_viptv_tag(1);"/>&nbsp;&nbsp;</span>
                                                 <span class="input-prepend"><span class="add-on">PRIO</span><input type="text" name="vlan_pri_cpu" class="wlan_filter" size="2" maxlength="1" value="<% nvram_get_x("", "vlan_pri_cpu"); %>" onkeypress="return is_number(this,event);"/></span>
                                             </td>
                                         </tr>
                                         <tr id="vlan_iptv">
-                                            <th>VLAN CPU (IPTV):</th>
+                                            <th>VLAN CPU IPTV</th>
                                             <td>
                                                 <span class="input-prepend"><span class="add-on">VID</span><input type="text" name="vlan_vid_iptv" class="wlan_filter" size="4" maxlength="4" value="<% nvram_get_x("", "vlan_vid_iptv"); %>" onkeypress="return is_number(this,event);" onblur="change_viptv_tag(1);"/>&nbsp;&nbsp;</span>
                                                 <span class="input-prepend"><span class="add-on">PRIO</span><input type="text" name="vlan_pri_iptv" class="wlan_filter" size="2" maxlength="1" value="<% nvram_get_x("", "vlan_pri_iptv"); %>" onkeypress="return is_number(this,event);"/></span>
