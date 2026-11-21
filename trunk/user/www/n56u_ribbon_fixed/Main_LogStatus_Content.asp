@@ -112,7 +112,7 @@ function clearLog(){
                                     <table width="100%" cellpadding="4" cellspacing="0" class="table">
                                         <tr>
                                             <td colspan="3" style="border-top: 0 none; padding-bottom: 0px;">
-                                                <b><#General_x_SystemTime_itemname#>:</b><span class="alert alert-info" style="margin-left: 10px; padding-top: 4px; padding-bottom: 4px;" id="system_time"></span>
+                                                <b><#General_x_SystemTime_itemname#></b><span class="alert alert-info" style="margin-left: 10px; padding-top: 4px; padding-bottom: 4px;" id="system_time"></span>
                                             </td>
                                         </tr>
                                         <tr>
