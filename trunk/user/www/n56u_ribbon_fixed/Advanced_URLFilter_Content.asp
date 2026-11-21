@@ -299,7 +299,7 @@ function done_validating(action){
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th><#FirewallConfig_UrlMAC#>:</th>
+                                            <th><#FirewallConfig_UrlMAC#></th>
                                             <td colspan="2" align="left">
                                                 <div id="ClientList_Block" class="alert alert-info ddown-list"></div>
                                                 <div class="input-append">
