@@ -328,15 +328,15 @@ function submitInternet(v){
     <td colspan="2"><span id="WANBRateTX"></span></td>
   </tr>
   <tr>
-    <th><#IP4_Addr#> WAN:</th>
+    <th><#IP4_Addr#> WAN</th>
     <td colspan="3"><span id="WANIP4"></span></td>
   </tr>
   <tr id="row_man_ip4" style="display:none">
-    <th><#IP4_Addr#> MAN:</th>
+    <th><#IP4_Addr#> MAN</th>
     <td colspan="3"><span id="MANIP4"></span></td>
   </tr>
   <tr id="row_wan_ip6" style="display:none">
-    <th><#IP6_Addr#> WAN:</th>
+    <th><#IP6_Addr#> WAN</th>
     <td colspan="3"><span id="WANIP6"></span></td>
   </tr>
   <tr id="row_lan_ip6" style="display:none">
@@ -344,15 +344,15 @@ function submitInternet(v){
     <td colspan="3"><span id="LANIP6"></span></td>
   </tr>
   <tr>
-    <th><#Gateway#> WAN:</th>
+    <th><#Gateway#> WAN</th>
     <td colspan="3"><span id="WANGW4"></span></td>
   </tr>
   <tr id="row_man_gw4" style="display:none">
-    <th><#Gateway#> MAN:</th>
+    <th><#Gateway#> MAN</th>
     <td colspan="3"><span id="MANGW4"></span></td>
   </tr>
   <tr>
-    <th>DNS:</th>
+    <th>DNS</th>
     <td colspan="3"><span id="WANDNS"></span></td>
   </tr>
   <tr>
