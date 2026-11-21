@@ -299,7 +299,7 @@ DDNS_SVR=DDNS 服务器 (如 members.3322.net)
 DDNS_URL=DDNS URI (如 /dyndns/update?system=dyndns&hostname=)
 DDNS_Second=副动态域名服务 (DDNS) 设置
 DDNS_Common=动态域名服务 (DDNS) 通用设置
-DDNS_SSL=使用 HTTPS 安全连接?
+DDNS_SSL=使用 HTTPS 安全连接
 DDNS_Source=我的互联网 IPv4 地址源
 DDNS_AddrExt=自动检测外部 IP
 DDNS_AddrWAN=WAN 接口地址
@@ -1370,7 +1370,7 @@ PPPConnection_x_PPPoEMTU_itemname=最大传输单位 (MTU)
 PPPConnection_x_PPPoEMTU_itemdesc=PPPoE 数据包的最大传送单位。默认值为 1492。仅当你的 ISP 需要时更变此设置值。
 PPPConnection_x_PPPoEMRU_itemname=最大接收单位 (MRU)
 PPPConnection_x_PPPoEMRU_itemdesc=封包的最大接收单位(MRU-Maximum Receive Unit)，建议维持原设置。
-PPPConnection_x_PPPoERelay_itemname=启用 PPPoE Relay
+PPPConnection_x_PPPoERelay_itemname=PPPoE Relay
 PPPConnection_x_PPPoERelay_itemdesc=开启 PPPoE 中继允许 LAN 中的设备创建一个可穿过 NAT 的独立 PPPoE 连接。
 PPPConnection_x_ServiceName_itemname=网络服务名称
 PPPConnection_x_ServiceName_itemdesc=部分 ISP 运营商可能要求指定该参数。请向你的 ISP 运营商确认并在需要时填入。
@@ -1559,7 +1559,7 @@ LANHostConfig_x_DDNSEnable_sectiondesc=使用动态 DNS (DDNS)可以为使用动
 LANHostConfig_x_DDNSEnable_sectiondesc2=目前路由器使用一个私人的 WAN IP 地址(192.168.x.x, 10.x.x.x, 172.16.x.x)。此路由器可能处于多个 NAT 中，DDNS 服务不能在此环境下工作。
 LANHostConfig_x_DDNSEnable_sectiondesc3=主机名注册成功，你可以使用 [主机名].asuscomm.com 从外网来访问内网服务。打开<a href="../Advanced_VirtualServer_Content.asp" target="_blank" style="text-decoration: underline;">端口转发</a>设置端口转发或 DMZ 以允许其它外网客户端访问局域网。若要远程配置路由器，请打开<a href="../Advanced_BasicFirewall_Content.asp" target="_blank" style="text-decoration: underline;">防火墙</a>。
 LANHostConfig_x_DDNSEnable_itemname=启用 DDNS
-LANHostConfig_x_DDNSServer_itemname=服务提供商:
+LANHostConfig_x_DDNSServer_itemname=服务提供商
 LANHostConfig_x_DDNSUserName_itemname=DDNS 用户名/邮箱地址/密码
 LANHostConfig_x_DDNSUserName_itemdesc=动态 DNS 服务的用户名。
 LANHostConfig_x_DDNSPassword_itemname=DDNS 密码
