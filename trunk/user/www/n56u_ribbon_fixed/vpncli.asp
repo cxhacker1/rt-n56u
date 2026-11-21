@@ -459,14 +459,14 @@ function getHash(){
                                     </td>
                                 </tr>
                                 <tr id="row_vpnc_mtu">
-                                    <th>MTU:</th>
+                                    <th>MTU</th>
                                     <td>
                                         <input type="text" maxlength="4" size="5" name="vpnc_mtu" class="input" value="<% nvram_get_x("", "vpnc_mtu"); %>" onkeypress="return is_number(this,event);"/>
                                         &nbsp;<span style="color:#888;">[1000..1460]</span>
                                     </td>
                                 </tr>
                                 <tr id="row_vpnc_mru">
-                                    <th>MRU:</th>
+                                    <th>MRU</th>
                                     <td>
                                         <input type="text" maxlength="4" size="5" name="vpnc_mru" class="input" value="<% nvram_get_x("", "vpnc_mru"); %>" onkeypress="return is_number(this,event);"/>
                                         &nbsp;<span style="color:#888;">[1000..1460]</span>
